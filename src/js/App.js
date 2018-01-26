@@ -3,6 +3,12 @@ const log = (x) => {
 }
 log(window);
 
+function addhttp(url) {
+    let URL = url;
+    URL = URL.replace("http", "https");
+    return URL;
+}
+
 const app = document.querySelector(".weather");
 
 const imgs = [
@@ -66,7 +72,8 @@ const getWeather = () => {
                 dayTime.textContent = day.title;   
 
                 const cond_img = document.createElement('img');
-                cond_img.src = day.icon_url;
+                cond_img.src = addhttp(day.icon_url);
+                
                 
                 const condition = document.createElement('p');
                 condition.textContent = day.icon;
