@@ -10,17 +10,7 @@
         margin: auto;
         padding: 20px;
         text-align: center;
-        font-size: 5vh;
-        color: #fff;
-        border-radius: 25px;
-        background: rgba(0,0,0,.6);
-    }
-    h1 {
-        margin: auto;
-        width: 320px;
-        padding: 20px;
-        text-align: center;
-        font-size: 1.5em;
+        font-size: 1.25em;
         color: #fff;
         border-radius: 25px;
         background: rgba(0,0,0,.6);
@@ -37,19 +27,16 @@
             background: rgba(0,0,0,.3);
             color: #fff;
             border: 1px solid #fff;
-            p {
-                margin: 20px auto;
-            }
+            p {margin: 20px auto;}
         }
     }
 }
 
 @media screen and (min-width: 530px){
     .weather {
+        .banner {font-size: 5vh;}
         .row {
-            .col-3 {
-                width: calc(50% - 1rem);
-            }
+            .col-3 {width: calc(50% - 1rem);}
         }
     }
 }
@@ -57,9 +44,7 @@
 @media screen and (min-width: 960px){
     .weather {
         .row {
-            .col-3 {
-                width: calc(25% - 1rem);
-            }
+            .col-3 {width: calc(25% - 1rem);}
         }
     }
 }

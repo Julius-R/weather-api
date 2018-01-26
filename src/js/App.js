@@ -31,7 +31,8 @@ if(timeOfDay > 6 && timeOfDay < 12){
 const validateForm = () => {
     const zipCode = document.querySelector("#zipCode");
     if (isNaN(zipCode.value) || zipCode.value == "") {
-        alert('You must enter a valid zipcode to continue')
+        document.querySelector(".fail").style.opacity = 1;
+        document.querySelector(".fail").textContent = 'Invalid Zip Entered';
     } else {
         getWeather();
     }
@@ -89,7 +90,8 @@ const getWeather = () => {
             });
             
         } else {
-            log("App not working");
+            document.querySelector(".fail").style.opacity = 1;
+            document.querySelector(".fail").textContent = 'Weather Not Found';
         }
 
     }
@@ -103,3 +105,4 @@ document.querySelector("#zipCode").addEventListener('keyup', (e) => {
         validateForm();
     }
 });
+
