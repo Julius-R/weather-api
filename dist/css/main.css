@@ -165,7 +165,7 @@ body {
   background-repeat: no-repeat;
   padding-top: 50px; }
   .weather .banner {
-    max-width: 1200px;
+    max-width: 768px;
     width: 100%;
     margin: auto;
     padding: 20px;
@@ -201,7 +201,7 @@ body {
 
 footer {
   background: #252525;
-  padding: 30px; }
+  padding: 5px; }
   footer .logo {
     text-align: right;
     width: 100%;
