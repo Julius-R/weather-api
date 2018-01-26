@@ -1,0 +1,100 @@
+// Grid System
+
+
+$mg: .5rem;
+$pd: 20px;
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .col-1{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-2{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-3{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-4{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-5{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-6{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-7{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-8{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-9{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-10{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-11{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+
+    .col-12{
+        width: calc(100% - 1rem);
+        margin: $mg;
+        padding: $pd;
+    }
+}
+
+@media screen and (min-width: 672px) {
+    .row {
+        .col-1{width: calc(8.3333% - 1rem);}
+        .col-2{width: calc(16.6666% - 1rem);}
+        .col-3{width: calc(25% - 1rem);}
+        .col-4{width: calc(33.3333% - 1rem);}
+        .col-5{width: calc(41.6666% - 1rem);}
+        .col-6{width: calc(50% - 1rem);}
+        .col-7{width: calc(58.3333% - 1rem);}
+        .col-8{width: calc(66.6666% - 1rem);}
+        .col-9{width: calc(75% - 1rem);}
+        .col-10{width: calc(83.3333% - 1rem);}
+        .col-11{width: calc(91.6666% - 1rem);}
+        .col-12{width: calc(100% - 1rem);}
+    }
+}
