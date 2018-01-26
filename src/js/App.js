@@ -1,7 +1,6 @@
 const log = (x) => {
     console.log(x);
 }
-log(window);
 
 function addhttp(url) {
     let URL = url;
@@ -21,12 +20,14 @@ const imgs = [
 const d = new Date();
 const timeOfDay = d.getHours();
 
-if(timeOfDay > 6 && timeOfDay < 12){
+log(timeOfDay);
+
+if(timeOfDay >= 6 && timeOfDay < 12){
         app.style.backgroundImage = "url("+imgs[0]+")";
-    }else if(timeOfDay > 12 && timeOfDay < 16){
+    }else if(timeOfDay >= 12 && timeOfDay < 16){
         app.style.backgroundImage = "url("+imgs[1]+")";
     }
-    else if(timeOfDay > 16 && timeOfDay < 21){
+    else if(timeOfDay >= 16 && timeOfDay < 21){
         app.style.backgroundImage = "url("+imgs[2]+")";
     }else {
         app.style.backgroundImage = "url("+imgs[3]+")";
