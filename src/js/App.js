@@ -45,7 +45,7 @@ const validateForm = () => {
 const getWeather = () => {
     const http = new XMLHttpRequest();
 
-    http.open('GET', "http://api.wunderground.com/api/cb111489f37f0dc5/conditions/forecast/q/"+zipCode.value+".json");
+    http.open('GET', "https://api.wunderground.com/api/cb111489f37f0dc5/conditions/forecast/q/"+zipCode.value+".json");
     http.onload = function(){
         let data = JSON.parse(this.response);
         if (this.status >= 200 && this.readyState == 4){
